@@ -1,39 +1,37 @@
 import "./styles.css";
-import Imagem from "./assets/Codeeditor.png";
 import Code from "./assets/code.svg";
 import Chat from "./assets/chat.svg";
 import Share from "./assets/share.svg";
-import User from "./assets/user.png";
 
-export default function Card() {
+export default function Card({id, imagemUrl, titulo, resumo, linhasDeCodigo, compartilhamentos, comentarios, usuario}) {
     return (
         <article className="card">
             <div className="card__imagem">
-                <img src={Imagem} alt="Imagem do Post"/>
+                <img src={imagemUrl} alt="Imagem do Post"/>
             </div>
             <div className="card__conteudo">
                 <div className="conteudo__texto">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur sapien eu purus condimentum bibendum. Nullam et aliquam dolor, ac auctor nisl. Proin vehicula finibus nunc quis dapibus. Donec lacinia ut risus id tristique. Sed et justo nec enim efficitur condimentum.</p>
+                    <h3>{titulo}</h3>
+                    <p>{resumo}</p>
                 </div>
                 <div className="conteudo__rodape">
                     <ul>
                         <li>
                             <img src={Code} alt="codigos"/>
-                            <span>120</span>
+                            <span>{linhasDeCodigo}</span>
                         </li>
                         <li>
                             <img src={Share} alt="compartilhamentos"/>
-                            <span>12</span>
+                            <span>{compartilhamentos}</span>
                         </li>
                         <li>
                             <img src={Chat} alt="comentarios"/>
-                            <span>10</span>
+                            <span>{comentarios}</span>
                         </li>
                     </ul>
                     <div className="rodape__usuario">
-                        <img src={User} alt="Imagem usuario"/>
-                        <span>@tioDoPave</span>
+                        <img src={usuario.imagem} alt="Imagem usuario"/>
+                        <span>@{usuario.nome}</span>
                     </div>
                 </div>
             </div>
