@@ -10,12 +10,16 @@ function App() {
   return (
     <div className='container'>
       <Sidebar/>
-      <div>
+      <main>
         <BarraDePesquisa/>
         <Filtro/>
         <Ordenacao/>
-        <Card/>
-      </div>
+        <div className='container-cards'>
+          <Card/>
+          <Card/>
+          <Card/>
+        </div>
+      </main>
     </div>
   )
 }

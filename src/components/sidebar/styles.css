@@ -21,6 +21,10 @@ aside{
     gap: 10px;
 }
 
+.lista-sidebar li a:hover{
+    color: var(--branco);
+}
+
 .item__link{
     text-decoration: none;
     color: var(--cinza-claro);

@@ -19,3 +19,7 @@
     text-decoration: underline;
     font-weight: 600;
 }  
+
+.lista-ordenacao__link:hover{
+    text-decoration: underline;
+}
