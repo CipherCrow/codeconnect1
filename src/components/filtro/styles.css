@@ -25,3 +25,9 @@
     line-height: 27px;
     font-size: 18px;
 }
+
+.container-filtro li:hover{
+    cursor: pointer;
+    background: var(--cinza-medio) url("./assets/close.svg") no-repeat right 15px;
+    padding-right: 1em;
+}

@@ -1,0 +1,21 @@
+.lista-ordenacao{
+    display: flex;
+    gap: 1.5em;
+    margin: 1em 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-ordenacao__link{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--cinza-medio); 
+    font-weight: 400;
+}
+
+.lista-ordenacao_link_selecionado{
+    color: var(--verde-destaque); 
+    text-decoration: underline;
+    font-weight: 600;
+}  
